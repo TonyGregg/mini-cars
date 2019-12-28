@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
@@ -13,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CarFilterPipe } from './pipes/car-filter.pipe';
 import { MaterialModule } from './shared/material/material.module';
 
 
@@ -28,12 +30,13 @@ import { MaterialModule } from './shared/material/material.module';
     HomeComponent,
     CarListComponent,
     NotFoundComponent,
-    CarouselComponent
-  ],
+    CarouselComponent,
+    CarFilterPipe  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MaterialModule,
     HttpClientModule,
     FlexLayoutModule

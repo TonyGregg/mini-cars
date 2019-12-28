@@ -6,6 +6,10 @@
       <mat-list-item>
         <h3 mat-line>{{car.name}}</h3>
         <h3 mat-line>{{car.carType.category}}</h3>
+        <h3 mat-line>{{car.carType.priceMin | currency}}</h3>
+        <h3 mat-line>{{car.carType.priceMax | currency: 'INR'}}</h3>
+
+
       </mat-list-item>
   </mat-card-content>
 </mat-card>

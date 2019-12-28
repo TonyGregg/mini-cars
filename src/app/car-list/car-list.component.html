@@ -1,9 +1,13 @@
 <mat-card>
   <mat-card-title>Car List</mat-card-title>
+  <form id="filter">
+    <label>Filter Car by Category:</label>
+    <input type="text" name="carTypeToFilter" [(ngModel)]="carTypeToFilter" />
+</form>
 
   <mat-card-content>
     <mat-list>
-      <mat-list-item *ngFor="let car of cars">
+      <mat-list-item *ngFor="let car of cars | carFilter: carTypeToFilter">
         <img mat-list-avatar src="{{car.id}}" alt="{{car.name}}">
         <h3 mat-line>{{car.name}}</h3>
         <h3 mat-line>{{car.carType.category}}</h3>

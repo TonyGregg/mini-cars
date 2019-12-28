@@ -10,6 +10,7 @@ import { CarService } from '../shared/car.service';
 })
 export class CarListComponent implements OnInit {
   cars: Car[];
+  carTypeToFilter = 'Sports';
 
   constructor( private router: Router, private carService: CarService) { }
 
