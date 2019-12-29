@@ -11,6 +11,6 @@ import { FooterComponent } from '../footer/footer.component';
   imports: [
     CommonModule
   ],
-  exports: [CarMiniLayoutComponent, HeaderComponent, FooterComponent]
+  exports: [CarMiniLayoutComponent ]
 })
 export class CarLayoutModule { }
