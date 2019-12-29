@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <div id="content" [@customHover]='state' 
+          (mouseover)="toggleBackground()"  
+          (mouseout)="toggleBackground()">Watch this fade
+    </div>
+   <div id="content" [@animationToggle]='hideOrShow'  (mouseover)="hideMe()"  
+   (mouseout)="hideMe()">Toggle DIV
+    </div>
+   
+</div>

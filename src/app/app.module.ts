@@ -17,6 +17,7 @@ import { CarFilterPipe } from './pipes/car-filter.pipe';
 import { MaterialModule } from './shared/material/material.module';
 import { CarLayoutModule } from './layout/car-layout/car-layout.module';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TrialAnimationComponent } from './trial-animation/trial-animation.component';
 
 
 
@@ -31,7 +32,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     NotFoundComponent,
     CarouselComponent,
     CarFilterPipe,
-    ContactUsComponent
+    ContactUsComponent,
+    TrialAnimationComponent
       ],
   imports: [
     BrowserModule,

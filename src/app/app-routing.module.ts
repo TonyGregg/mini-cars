@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
 import { CarDetailComponent } from './car-detail/car-detail.component';
 import { CarListComponent } from './car-list/car-list.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TrialAnimationComponent } from './trial-animation/trial-animation.component';
 
 
 const routes: Routes = [
- 
   {
     path: 'home', component: HomeComponent
   },
@@ -21,6 +20,9 @@ const routes: Routes = [
   },
   {
     path: 'car/:carId', component: CarDetailComponent
+  },
+  {
+    path: 'animate', component: TrialAnimationComponent
   },
   {
     path: '', redirectTo: 'home', pathMatch: 'full'
