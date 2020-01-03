@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
-import { forbiddenNameValidator } from '../shared/resticted-car-name.directive';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-car-register',
@@ -9,9 +8,7 @@ import { forbiddenNameValidator } from '../shared/resticted-car-name.directive';
 })
 export class CarRegisterComponent implements OnInit {
   carEditForm = this.fb.group({
-    carMake: ['',
-      Validators.required, Validators.minLength(5),
-      forbiddenNameValidator(/taco/i)],
+    carMake: [''],
     carModel: [''],
     dealerAddress: this.fb.group({
       street: [''],
