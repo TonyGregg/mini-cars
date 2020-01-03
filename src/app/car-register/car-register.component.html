@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <span>Register New Car</span>
+</mat-toolbar>
+<p>
+
+</p>
+<form [formGroup]="carEditForm" (ngSubmit)="saveCar()">
+<label>
+  Make:
+  <input type="text" formControlName="carMake">
+</label> <br>
+<label>
+  Model:
+  <input type="text" formControlName="carModel">
+</label> <br>
+
+
+
+<button type="submit" [disabled]="!carEditForm.valid">Submit</button>
+<p>
+  Real-time data: {{ carEditForm.value | json }}
+</p>
+<p>
+  Your form status is : {{ carEditForm.status }}
+</p>
+</form>
+
+
+
